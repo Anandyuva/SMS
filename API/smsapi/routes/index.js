@@ -45,5 +45,25 @@ router.post('/saveSalary',(req,res)=>{
     }
   })
 })
+router.get('/getEMI',(req,res)=>{
+  emiSelectQuery='select * from emi';
+  connection.query(emiSelectQuery,(err,result)=>{
+    if(err){
+      res.send("Unable to fetch Data")
+    }else{
+      res.send(result);
+    }
+  })
+})
+router.get('/getExpenses',(req,res)=>{
+  expenseSelectQuery='select * from expenses';
+  connection.query(expenseSelectQuery,(err,result)=>{
+    if(err){
+      res.send("Unable to Fetch Data")
+    }else{
+      res.send(result);
+    }
+  })
+})
 
 module.exports = router;
