@@ -54,9 +54,9 @@ const Salary=()=>{
                             <label for="">Enter Your Salary</label>
                             <input type="number"
                                 class="form-control w-50" name="" id="salary" aria-describedby="helpId" placeholder="" />
-                            <small id="helpId" class="form-text text-muted">Help text</small>
+                            
                         </div>
-                        <button onClick={RunPie} class="btn btn-primary">Submit</button>
+                        <button onClick={RunPie} class="btn btn-primary" style={{margin:"1rem 0"}}>Submit</button>
                     </div>
                 </div>
                 <div className="col-6">

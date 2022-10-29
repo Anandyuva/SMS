@@ -6,9 +6,11 @@ const Emi=()=>{
         <h1>This is Emi Page</h1>
         <label>Enter Product Name</label>
         <input type="number" />
-        <label>Enter Amount</label>
+        <label>Enter Total Amount</label>
         <input type="number" />
-        <label>EMI Peroid</label>
+        <label>Enter Monthly EMI</label>
+        <input type="number" />
+        <label>EMI Tenure</label>
         <input type="number" />
         <input type="button" value="Confirm" />
         <input type="button" value="Close" />
